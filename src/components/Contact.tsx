@@ -1,7 +1,7 @@
 import { MessageCircle, Mail, MapPin, Facebook } from "lucide-react";
 
 const WHATSAPP_NUMBER = "27726631875";
-const EMAIL = "info@aisacademic.co.za";
+const EMAIL = "Happymakondo65@gmail.com";
 
 const Contact = () => (
   <section id="contact" className="py-20 bg-primary">
@@ -30,7 +30,7 @@ const Contact = () => (
           <span className="text-sm opacity-70">Send us an email</span>
         </a>
         <a
-          href="https://www.facebook.com/TutorGen"
+          href="https://www.facebook.com/nonpareilstuff"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-3 bg-primary-foreground/5 border border-primary-foreground/10 rounded-2xl p-6 text-primary-foreground hover:border-secondary hover:text-secondary transition-all group"
@@ -42,7 +42,7 @@ const Contact = () => (
         <div className="flex flex-col items-center gap-3 bg-primary-foreground/5 border border-primary-foreground/10 rounded-2xl p-6 text-primary-foreground">
           <MapPin size={32} />
           <span className="font-bold">Location</span>
-          <span className="text-sm opacity-70">Elim, Limpopo</span>
+          <span className="text-sm opacity-70">Gauteng</span>
         </div>
       </div>
     </div>

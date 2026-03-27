@@ -1,20 +1,40 @@
 import { Check } from "lucide-react";
 
 const onlinePlans = [
-  {
-    title: "Single Subject",
+    {
+    title: "Package A",
     price: "R350",
     period: "/month",
-    features: ["1 subject (Maths or P.Sciences)", "2 group sessions/week", "1h30m per session", "Topical Q&A", "Free study materials"],
-    popular: false,
+    features: ["One Maths/Science session per week",
+       "2hr per session",
+      "Free learning Material",
+        ],
+        popular: false,
   },
-  {
-    title: "Both Subjects",
+     {
+    title: "Package B",
     price: "R550",
     period: "/month",
-    features: ["Mathematics & P.Sciences", "2 group sessions/week", "1h30m per session", "Research & assignment help", "Bursary & university application help"],
-    popular: true,
+    features: ["One Maths session per week"
+      , "One Science session per week",
+       "2hr per session",
+      "Free learning Material"
+        ],
+        popular: true,
   },
+  {
+    title: "Package C",
+    price: "R1000",
+    period: "/month",
+    features: ["Two Maths session per week"
+      , "Two Science session per week",
+       "2hr per session",
+      "Free learning Material",
+      "Research & assignment help",
+      "Bursary & university application help"
+        ],
+        popular: false,
+  }
 ];
 
 const autumnPlans = [
@@ -43,7 +63,7 @@ const Pricing = () => (
 
       {/* Online Lessons */}
       <h3 className="font-heading text-2xl font-bold text-secondary text-center mb-8">Online Lessons (via Microsoft Teams)</h3>
-      <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+      <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-16">
         {onlinePlans.map((p) => (
           <div key={p.title} className={`rounded-2xl p-8 ${p.popular ? "bg-secondary text-secondary-foreground ring-4 ring-secondary/30" : "bg-primary-foreground/5 text-primary-foreground border border-primary-foreground/10"}`}>
             {p.popular && <span className="text-xs font-bold uppercase tracking-wider bg-secondary-foreground/10 px-3 py-1 rounded-full">Most Popular</span>}
@@ -68,7 +88,7 @@ const Pricing = () => (
       </div>
 
       {/* Autumn Classes */}
-      <h3 className="font-heading text-2xl font-bold text-secondary text-center mb-2">Autumn Holiday Classes</h3>
+      {/* <h3 className="font-heading text-2xl font-bold text-secondary text-center mb-2">Autumn Holiday Classes</h3>
       <p className="text-primary-foreground/60 text-center mb-8">28 March – 4 April · 9 AM · Elim</p>
       <p className="text-primary-foreground/50 text-center text-sm mb-6">Subjects: Mathematics, Physical Sciences, Geography</p>
       <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -88,7 +108,7 @@ const Pricing = () => (
             </a>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   </section>
 );
