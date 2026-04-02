@@ -80,7 +80,7 @@ const Pricing = () => (
                 </li>
               ))}
             </ul>
-            <a href="#contact" className={`block text-center mt-8 py-3 rounded-lg font-bold transition ${p.popular ? "bg-secondary-foreground text-secondary hover:opacity-90" : "bg-secondary text-secondary-foreground hover:brightness-110"}`}>
+            <a href="#register" className={`block text-center mt-8 py-3 rounded-lg font-bold transition ${p.popular ? "bg-secondary-foreground text-secondary hover:opacity-90" : "bg-secondary text-secondary-foreground hover:brightness-110"}`}>
               Register Now
             </a>
           </div>
