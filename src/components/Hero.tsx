@@ -20,7 +20,7 @@ const Hero = () => (
         <p className="text-primary-foreground/70 text-lg max-w-xl mb-8 font-body">
           Learn the latest updated CAPS and IEB curriculum from experienced tutors and teachers. Online & in-person classes available.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <a href="#pricing" className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-7 py-3 rounded-lg font-bold hover:brightness-110 transition text-lg">
             View Pricing <ArrowRight size={20} />
           </a>
