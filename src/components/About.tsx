@@ -16,7 +16,7 @@ const About = () => (
           <img src={genImage} alt="founders image" className="rounded-full" />
         </div>
         <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Gen</h3>
-        <p className="text-muted-foreground mb-6">Founder of AIS Academic Solutions</p>
+        <p className="text-muted-foreground mb-6">Founder of Academic Improvement Solutions </p>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           {credentials.map((c) => (
             <div key={c.label} className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
