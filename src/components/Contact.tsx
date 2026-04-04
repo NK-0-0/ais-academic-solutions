@@ -1,7 +1,7 @@
 import { MessageCircle, Mail, MapPin, Facebook } from "lucide-react";
 
 const WHATSAPP_NUMBER = "27726631875";
-const EMAIL = "Happymakondo65@gmail.com";
+const EMAIL = "happymakondo65@gmail.com";
 
 const Contact = () => (
   <section id="contact" className="py-20 bg-primary">
