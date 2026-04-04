@@ -26,7 +26,7 @@ const About = () => (
           ))}
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          With over 6 years of tutoring experience, Gen founded AIS Academic Solutions to create a safe space for students to learn, grow, and achieve academic excellence. The mission is to make quality education accessible and to support students holistically — academically, emotionally, and spiritually.
+          With over 6 years of tutoring experience, With over 6 years of tutoring experience, Gen founded Academic Improvement Solutions to create a safe space for students to learn, grow, and achieve academic excellence. The mission is to make quality education accessible and to support students holistically — academically, emotionally, and spiritually. to create a safe space for students to learn, grow, and achieve academic excellence. The mission is to make quality education accessible and to support students holistically — academically, emotionally, and spiritually.
         </p>
       </div>
     </div>
