@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="AIS Academic Solutions" className="h-10 w-10 rounded-full object-cover" />
+          <img src={logo} alt="AIS Academic Solutions" className="h-8 w-auto object-contain" />
           <span className="font-heading text-lg font-bold text-primary-foreground">ais</span>
         </a>
         <div className="hidden md:flex items-center gap-8">
