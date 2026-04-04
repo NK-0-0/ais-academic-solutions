@@ -1,4 +1,5 @@
 import { Award, Palette, Code } from "lucide-react";
+import genImage from "/src/assets/gen.jpeg";
 
 const credentials = [
   { icon: Award, label: "Tutor (6+ years)" },
@@ -12,7 +13,7 @@ const About = () => (
       <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">Meet the Founder</h2>
       <div className="max-w-2xl mx-auto text-center">
         <div className="w-28 h-28 mx-auto rounded-full bg-primary flex items-center justify-center text-primary-foreground font-heading text-4xl font-bold mb-6">
-          <img src="/src/assets/gen.jpeg" alt="founders image" className="rounded-full"/>
+          <img src={genImage} alt="founders image" className="rounded-full" />
         </div>
         <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Gen</h3>
         <p className="text-muted-foreground mb-6">Founder of AIS Academic Solutions</p>

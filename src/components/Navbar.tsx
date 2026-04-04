@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#home" className="flex items-center gap-2">
           <img src={logo} alt="AIS Academic Solutions" className="h-10 w-10 rounded-full object-cover" />
-          <span className="font-heading text-lg font-bold text-primary-foreground">AIS</span>
+          <span className="font-heading text-lg font-bold text-primary-foreground">ais</span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (

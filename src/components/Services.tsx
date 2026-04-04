@@ -3,10 +3,7 @@ import { BookOpen, Monitor, Users, GraduationCap, FileText, Heart } from "lucide
 const services = [
   { icon: BookOpen, title: "Mathematics", desc: "Differential Calculus, Geometry & more" },
   { icon: Monitor, title: "Physical Sciences", desc: "Mechanics, Electric Circuits & more" },
-  { icon: GraduationCap, title: "Geography", desc: "Geomorphology & related topics" },
-  { icon: Users, title: "Group Sessions", desc: "2 group sessions per week, 1h30m each" },
   { icon: FileText, title: "Study Materials", desc: "Free study materials & techniques included" },
-  { icon: Heart, title: "Holistic Support", desc: "Emotional, spiritual & social support" },
 ];
 
 const Services = () => (
