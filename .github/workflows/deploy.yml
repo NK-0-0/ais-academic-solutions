@@ -42,3 +42,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: github-pages
           folder: dist
+          clean: true
