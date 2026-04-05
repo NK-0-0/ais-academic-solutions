@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js 😎
         uses: actions/setup-node@v4 # ⬅️ Update to latest (v4)
         with:
-          node-version: '20' # More stable LTS version
+          node-version: '24' # More stable LTS version
 
       - name: Install Dependencies 🏃‍♂️
         run: npm ci # ⬅️ Prefer `npm ci` for CI environments (faster, safer)
