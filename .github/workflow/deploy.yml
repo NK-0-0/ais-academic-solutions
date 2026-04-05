@@ -31,7 +31,7 @@ jobs:
         run: npm run build
 
       - name: Verify build output
-        run: ls -la dist/ais-academic-solutions
+        run: ls -la dist
 
       - name: List all contents in dist folder
         run: ls -la dist && find dist
@@ -41,4 +41,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: github-pages
-          folder: dist/ais-academic-solutions/browser
+          folder: dist
