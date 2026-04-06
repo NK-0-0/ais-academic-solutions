@@ -6,7 +6,7 @@ const onlinePlans = [
     price: "R350",
     period: "/month",
     features: ["One Maths/Science session per week",
-       "2hr per session",
+       "1hr 30min per session",
       "Free learning Material",
         ],
         popular: false,
@@ -17,7 +17,7 @@ const onlinePlans = [
     period: "/month",
     features: ["One Maths session per week"
       , "One Science session per week",
-       "2hr per session",
+       "1hr 30min per session",
       "Free learning Material"
         ],
         popular: true,
@@ -28,7 +28,7 @@ const onlinePlans = [
     period: "/month",
     features: ["Two Maths session per week"
       , "Two Science session per week",
-       "2hr per session",
+       "1hr 30min per session",
       "Free learning Material",
       "Research & assignment help",
       "Bursary & university application help"
