@@ -10,6 +10,7 @@ const onlinePlans = [
       "Free learning Material",
         ],
         popular: false,
+        recommended : false
   },
      {
     title: "Package B",
@@ -21,6 +22,7 @@ const onlinePlans = [
       "Free learning Material"
         ],
         popular: true,
+        recommended : false
   },
   {
     title: "Package C",
@@ -34,6 +36,7 @@ const onlinePlans = [
       "Bursary & university application help"
         ],
         popular: false,
+        recommended : true
   }
 ];
 
@@ -41,16 +44,16 @@ const autumnPlans = [
   {
     title: "Grade 11",
     rows: [
-      { label: "1 Subject", price: "R300" },
-      { label: "2 Subjects", price: "R400" },
-      { label: "3 Subjects", price: "R500" },
+      { label: "1 Subject", price: "R200/hr" },
+      //{ label: "2 Subjects", price: "R400" },
+      //{ label: "3 Subjects", price: "R500" },
     ],
   },
   {
     title: "Grade 12",
     rows: [
-      { label: "1 Subject", price: "R300" },
-      { label: "2 Subjects", price: "R400" },
+      { label: "1 Subject", price: "R200/hr" },
+      //{ label: "2 Subjects", price: "R400" },
     ],
   },
 ];
@@ -67,6 +70,7 @@ const Pricing = () => (
         {onlinePlans.map((p) => (
           <div key={p.title} className={`rounded-2xl p-8 ${p.popular ? "bg-secondary text-secondary-foreground ring-4 ring-secondary/30" : "bg-primary-foreground/5 text-primary-foreground border border-primary-foreground/10"}`}>
             {p.popular && <span className="text-xs font-bold uppercase tracking-wider bg-secondary-foreground/10 px-3 py-1 rounded-full">Most Popular</span>}
+            {p.recommended && <span className="text-xs font-bold uppercase tracking-wider bg-secondary text-secondary-foreground px-3 py-1 rounded-full">Recommended</span>}
             <h4 className="font-heading text-xl font-bold mt-3">{p.title}</h4>
             <div className="mt-4 mb-6">
               <span className="text-4xl font-black">{p.price}</span>
@@ -87,10 +91,9 @@ const Pricing = () => (
         ))}
       </div>
 
-      {/* Autumn Classes */}
-      {/* <h3 className="font-heading text-2xl font-bold text-secondary text-center mb-2">Autumn Holiday Classes</h3>
-      <p className="text-primary-foreground/60 text-center mb-8">28 March – 4 April · 9 AM · Elim</p>
-      <p className="text-primary-foreground/50 text-center text-sm mb-6">Subjects: Mathematics, Physical Sciences, Geography</p>
+      { /* Autumn Classes */}
+       <h3 className="font-heading text-2xl font-bold text-secondary text-center mb-2">One on One Lessons (In-Person)</h3>
+      <p className="text-primary-foreground/50 text-center text-m mb-6">Subjects: Mathematics, Physical Sciences</p>
       <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {autumnPlans.map((g) => (
           <div key={g.title} className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-2xl p-8 text-primary-foreground">
@@ -103,12 +106,12 @@ const Pricing = () => (
                 </div>
               ))}
             </div>
-            <a href="#contact" className="block text-center mt-8 py-3 rounded-lg font-bold bg-secondary text-secondary-foreground hover:brightness-110 transition">
+            <a href="#register" className="block text-center mt-8 py-3 rounded-lg font-bold bg-secondary text-secondary-foreground hover:brightness-110 transition">
               Register Now
             </a>
           </div>
         ))}
-      </div> */}
+      </div> 
     </div>
   </section>
 );
